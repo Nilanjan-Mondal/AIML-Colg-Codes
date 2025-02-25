@@ -26,7 +26,6 @@ for i in range(len(x)):
 
 m = coVar / var
 c = mean_y - (m * mean_x)
-
 max_x = np.max(x) + 100
 min_x = np.min(x) - 100
 
@@ -34,7 +33,7 @@ x1 = np.linspace(min_x, max_x, 100)
 # y' = m(xi) + c   is the predicted value of y (xi will be input from user)
 y1 = (m * x1) + c  
 
-plt.plot(x1, y1, color = "#FF0000") # predicted values line
+plt.plot(x1, y1, color = "#FF0000",) # predicted values line
 plt.scatter(x, y, color = "#FF0000", label = "Data Points") # actual data points from the dataSet
 
 
