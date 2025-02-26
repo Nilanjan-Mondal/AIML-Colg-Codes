@@ -23,7 +23,7 @@ data = pd.read_csv(path + "headbrain.csv")
 x = data['Head Size(cm^3)'].values
 y = data['Brain Weight(grams)'].values
 
-# Reshape x into a 2D array because scikit-learn expects a 2D array for features
+# Reshape x into a 2D array because in scikit-learn  expects a 2D array for features
 x = x.reshape(len(x), 1)  # Reshapes x from (n,) to (n,1), making it a 2D column vector
 
 # Split the dataset into training (90%) and testing (10%) sets
